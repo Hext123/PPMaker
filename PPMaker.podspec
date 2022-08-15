@@ -65,6 +65,10 @@ Pod::Spec.new do |s|
 
   	ss.subspec 'Foundation' do |ssFoundation|
       ssFoundation.source_files = 'PPMaker/PPMakeCategory/Foundation/*.{h,m}'
+      
+      ssFoundation.subspec 'NSArray' do |ssMutArray|
+        ssMutArray.source_files = 'PPMaker/PPMakeCategory/Foundation/NSArray/*.{h,m}'
+      end
 
   		ssFoundation.subspec 'NSMutableArray' do |ssMutArray|
   			ssMutArray.source_files = 'PPMaker/PPMakeCategory/Foundation/NSMutableArray/*.{h,m}'

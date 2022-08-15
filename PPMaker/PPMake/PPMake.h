@@ -53,7 +53,7 @@ typedef NS_ENUM(NSInteger,PPMakeType) {
  * @return ☠☠☠返回值是id类型，主要是为了处理返回值类型为UIView *时，比如返回一个button,
  * 系统警告"Incompatible pointer types initializing 'UIButton *' with an expression of type 'UIView *'"的问题。
  */
-- (id)pp_make:(void(^)(PPMake *make))make;
+- (__kindof UIView *)pp_make:(void(^)(PPMake *make))make;
 
 /**
  * 🔒 🔒 🔒 🔒
